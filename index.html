@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <a href="#"><img src="_img/logo.png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-ul">
+                <li class="nav-li"><a href="#aboutMe" class="nav-link">About Me</a> </li>
+                <li class="nav-li"><a href="#myProjects" class="nav-link">My Projects</a></li>
+                <li class="nav-li"><a href="#contactMe" class="nav-link">Contact Me</a></li>
+            </ul>
+            <div class="hamburger-container">
+                <span class="hamburger"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="about-me" id="aboutMe">
+        <img src="_img/portfolio pic.jpg" alt="person standing in desert" id="portfolio-pic">
+        <div class="about-me-info">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Ratione animi exercitationem soluta est quos expedita incidunt doloremque 
+             dolores quaerat? Rerum asperiores, culpa repellat ratione nesciunt excepturi quo 
+             accusamus incidunt possimus.</p>
+
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Ratione animi exercitationem soluta est quos expedita incidunt doloremque 
+            dolores quaerat? Rerum asperiores, culpa repellat ratione nesciunt excepturi quo 
+            accusamus incidunt possimus.</p>
+            
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Ratione animi exercitationem soluta est quos expedita incidunt doloremque 
+            dolores quaerat? Rerum asperiores, culpa repellat ratione nesciunt excepturi quo 
+            accusamus incidunt possimus.</p>
+        </div>
+    </section>
+    <section class="my-projects" id="myProjects">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <div class="project-img">
+                    <a href="project1.html">
+                        <img src="_img/project1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.  Voluptatum deserunt quasi ducimus quos architecto quam.
+                    </p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <a href="#">
+                        <img src="_img/project2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.  Voluptatum deserunt quasi ducimus quos architecto quam.
+                    </p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <a href="#">
+                        <img src="_img/project3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3>Project 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.  Voluptatum deserunt quasi ducimus quos architecto quam.
+                    </p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <a href="#">
+                        <img src="_img/project4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3>Project 4</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.  Voluptatum deserunt quasi ducimus quos architecto quam.
+                    </p>
+                </div>
+            </div>                       
+        </div>
+    </section> 
+
+    <section class="contact-me" id="contactMe">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <div class="contact-details">
+                <div class="contact-info">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a> 
+                    <a href="https://twitter.com/explore" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a> 
+                    <a href="mailto:ahmed@onedev.com"><i class="fa fa-envelope" aria-hidden="true"></i> ahmed@onedev.com</a> 
+                    <a href="callto:xxx-yyy-zzzz"><i class="fa fa-phone-square" aria-hidden="true"></i> xxx-yyy-zzzz</a> 
+                </div>
+                <div class="contact-form">
+                    <p>Please, Feel free to leav a message.</p>
+                    <form action="">
+                        <label for="contact-name">
+                            Name:
+                            <input type="text" name="name" id="contact-name">
+                        </label>
+                        <label for="contact-email">
+                            Email:
+                            <input type="email" name="email" id="contact-email">
+                        </label>
+                        <label for="contact-phone">
+                            Phone (Optional):
+                            <input type="tel" name="phone" id="contact-phone">
+                        </label>
+                        <label for="contact-message">
+                            Message:
+                            <textarea name="message" id="contact-message" rows="10" cols="30"></textarea>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>This site is created by Ahmed. 2020  &copy;</span>
+    </footer>
+
+    
+    <div class="up-container">
+        <i class="fa fa-arrow-up" aria-hidden="true" class="up"></i>
+    </div>
+    
+
+    <script src="menu.js"></script>
+    
+</body>
+</html>

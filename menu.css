@@ -1,0 +1,23 @@
+.nav-ul.list-menu {
+    display: flex;
+    height: initial;
+    margin-top: 50px;
+    flex-direction: column;
+    background-color: var(--primary-bg);  
+}
+
+.nav-li.list-li {
+    width: 100%;
+}
+
+span.cross {
+    transform: rotate(.625turn);
+}
+
+span.cross::before {
+    transform: rotate(90deg) translateX(6px);
+}
+
+span.cross::after {
+    opacity: 0;
+}

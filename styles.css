@@ -1,0 +1,385 @@
+:root {
+    --primary-bg: #ff8657;
+    --secondary-bg: #302e2e;
+    --accent-bg: rgba(0,0,0,0.6);
+    --primary-text-color: black;
+    --secondary-text-color: wheat;
+    --shadow: 2px 2px 5px gray;
+    --font-primary: 'Heebo', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;    
+    font-family: var(--font-primary);
+}
+
+header {
+    background-color: var(--primary-bg);
+    position: relative;
+    height: 50px;
+    top: 0;
+}
+
+.brand {
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+}
+
+.brand img {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: -78px;
+    left: 10px;
+}
+
+nav {
+    width: 60vw;
+    right: 0;
+    position: absolute;
+    height: 50px;
+    z-index: 6;
+}
+
+.nav-ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    display: flex;
+}
+
+.nav-li {
+    list-style: none;
+    width: 20vw;
+    text-align: center;
+    height: 50px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    
+}
+
+.nav-link:hover {
+    background-color: black;
+    color: wheat;
+}
+
+.hamburger-container {
+    display: none;
+}
+
+.about-me {
+    position: relative;
+}
+
+#portfolio-pic {
+    width: 100%;
+}
+/* Modifying stopped here */
+.about-me-info { 
+    color: var(--secondary-text-color);
+    width: 40vw;
+    max-height: 100%;
+    position: absolute;
+    background-color: var(--accent-bg);
+    padding: 0 10px 0 10px;
+    top: 1vw;
+    bottom: 1.5vw;
+    left: 1vw;
+}
+
+.about-me-info p {
+    text-align: justify;
+    font-size: 1.5vw;
+}
+
+.my-projects {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.my-projects .project-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-projects .project-cards .project-card {
+    width: 20%;
+    margin: 2.5%;
+    padding: 10px;
+    box-shadow: var(--shadow);
+}
+
+.my-projects .project-cards .project-card img {
+    width: 100%;
+}
+
+.contact-me {
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text-color);
+}
+
+.contact-container {
+    width: 90%;
+    margin: auto;
+    padding: 1vw 0;
+}
+
+.contact-details {
+    display: flex;
+}
+
+.contact-me .contact-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+.contact-me .contact-info a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+}
+
+.contact-me .contact-form {
+    width: 50%;
+    padding: 2vw;
+}
+
+.contact-me .contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me .contact-form form label{
+    display: flex;
+    flex-direction: column;
+    margin: 1vw 0;
+}
+
+.contact-me .contact-form form label input{
+    width: 50%;
+}
+
+.contact-me .contact-form form label textarea {
+    max-width: 100%;
+    min-width: 60%;
+    max-height: 200px;
+    min-height: 200px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary-bg);
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+.up-container {
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(245, 152, 98,0.7);
+    z-index: 100;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    color: var(--secondary-bg);
+}
+
+/* 
+Create Media queries for 
+800px
+600px
+500px
+400px
+300px
+*/
+
+@media (max-width: 900px) {
+
+    /* About Me Section */
+    .about-me-info p {
+        font-size: 1.5vw;
+    }
+
+    /* My Projects Section */
+    .my-projects .project-cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .my-projects .project-cards .project-card {
+        width: 28%;
+        margin: 2.5%;
+        padding: 10px;
+        box-shadow: var(--shadow);
+    }    
+
+    /* Contact Me Section */
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .contact-me .contact-info {
+        width: 100%;
+        border-bottom: var(--secondary-text-color) solid 2px;
+    }
+
+    .contact-me .contact-info a {
+        font-size: initial;
+        line-height: 1.5em;
+    }
+
+    .contact-me .contact-form {
+        width: 100%;
+        padding: 2vw;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    /* About Me Section */
+    .about-me {
+        background-color: var(--secondary-bg);
+        padding-bottom: 2vw;
+    }
+
+    .about-me-info {
+        position: initial;
+        width: 80%;
+        margin: auto;
+        border-radius: initial;
+        background-color: initial;
+    }
+
+    .about-me-info p {
+        font-size: initial;
+    }
+
+    .my-projects .project-cards .project-card {
+        width: 40%;
+        margin: 5%;
+    }    
+
+}
+
+@media (max-width: 500px) {
+
+    /* Header */
+    .nav-ul {
+        display: none;
+    }
+
+    .hamburger-container {
+        display: inline-block;
+        position: absolute;
+        right: 25px;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    .hamburger{
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        background-color: var(--secondary-bg);
+        position: relative;
+    }
+    
+    .hamburger::before {
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: var(--secondary-bg);
+        position: absolute;
+        bottom: 6px;
+    }
+    
+    .hamburger::after {
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: var(--secondary-bg);
+        position: absolute;
+        top: 6px;
+    }
+
+    
+
+    /* My Projects */
+    .my-projects .project-cards .project-card {
+        width: 100%;
+        /* margin: 10%; */
+    }   
+
+
+}
+
+
+/* Project 1 Page */
+
+header .back-button {
+    position: absolute;
+    right: 25px;
+    margin-top: 5px;
+    background-color: var(--primary-bg);
+    border: 2px solid var(--secondary-bg);
+    padding: 6px 3px 2px 3px;
+    height: 40px;
+}
+
+header .back-button a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+main h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+main img {
+    width: 80%;
+}
+
+main p {
+    /* margin: 1em  0; */
+    text-align: justify;
+    font-size: 1.1em;
+}
